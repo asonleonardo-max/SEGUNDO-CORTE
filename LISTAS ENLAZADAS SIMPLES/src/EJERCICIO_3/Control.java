@@ -44,7 +44,6 @@ public class Control {
         System.out.println("NULL");
     }
 
-    // 🔥 Reto: mover vuelo al inicio (emergencia)
     public void reportarEmergencia(String numeroVuelo) {
 
         if (cabeza == null) {

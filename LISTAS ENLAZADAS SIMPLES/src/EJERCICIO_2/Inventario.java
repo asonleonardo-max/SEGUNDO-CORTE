@@ -44,7 +44,6 @@ public class Inventario {
         System.out.println("NULL");
     }
 
-    // 🔥 Reto: productos con menos de 5 días
     public void productosPorVencer() {
         Producto actual = cabeza;
 
