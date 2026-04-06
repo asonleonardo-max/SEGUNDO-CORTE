@@ -63,8 +63,8 @@ public class Playlist {
 
         int minutos = totalSegundos / 60;
         int segundos = totalSegundos % 60;
-
-        System.out.println("\n⏱ Duración total: " 
+        
+        System.out.println("\n Duración total: " 
                 + minutos + ":" + String.format("%02d", segundos));
     }
 }
