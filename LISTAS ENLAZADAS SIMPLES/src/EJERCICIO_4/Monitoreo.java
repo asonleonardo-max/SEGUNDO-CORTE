@@ -30,7 +30,6 @@ public class Monitoreo {
         System.out.println("NULL");
     }
 
-    // 🔥 Reto: encontrar la temperatura más alta
     public void mayorTemperatura() {
 
         if (cabeza == null) {
