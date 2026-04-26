@@ -76,20 +76,15 @@ public class Main {
                     galeria.agregarFoto("Foto4", "2024-04-05");
                     galeria.agregarFoto("Foto5", "2024-05-01");
 
-                    // avanza 2 veces
                     galeria.siguiente();
                     galeria.siguiente();
 
-                    // marcar favorita
                     galeria.toggleFavorita();
 
-                    // retroceder 1
                     galeria.anterior();
 
-                    // eliminar
                     galeria.eliminarActual();
 
-                    // mostrar final
                     galeria.mostrarGaleria();
                     break;
 

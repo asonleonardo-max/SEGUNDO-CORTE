@@ -74,19 +74,14 @@ public class Main {
                     editor.agregarCapa("Texto", true, "texto");
                     editor.agregarCapa("Sombras", true, "objeto");
 
-                    // activar la del medio (nos movemos manualmente)
                     editor.bajarCapa();
 
-                    // sube una vez
                     editor.subirCapa();
 
-                    // ocultar
                     editor.toggleVisibilidad();
 
-                    // eliminar
                     editor.eliminarActiva();
 
-                    // mostrar final
                     editor.mostrarCapas();
                     break;
 
