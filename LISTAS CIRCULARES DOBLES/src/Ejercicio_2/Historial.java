@@ -77,6 +77,7 @@ public class Historial {
             return;
         }
 
+        
         Comando eliminar = cursor;
 
         eliminar.anterior.siguiente = eliminar.siguiente;

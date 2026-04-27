@@ -25,30 +25,31 @@ public class Main {
             System.out.println("   Historial de Comandos");
             System.out.println("=================================");
             System.out.println("1. Agregar comando");
-            System.out.println("2. Ir arriba");
-            System.out.println("3. Ir abajo");
-            System.out.println("4. Mostrar comando actual");
-            System.out.println("5. Eliminar comando actual");
-            System.out.println("6. Mostrar historial completo");
-            System.out.println("7. Cargar ejemplo");
+            System.out.println("2. Arriba");
+            System.out.println("3. Abajo");
+            System.out.println("4. Mostrar actual");
+            System.out.println("5. Eliminar actual");
+            System.out.println("6. Mostrar historial");
+            System.out.println("7. Simulación");
             System.out.println("0. Salir");
             System.out.print("Opción: ");
             opcion = sc.nextInt();
             sc.nextLine();
 
             switch (opcion) {
+
                 case 1:
                     System.out.print("Comando: ");
                     String texto = sc.nextLine();
 
-                    System.out.print("¿Fue exitoso? (true/false): ");
-                    boolean exitoso = sc.nextBoolean();
+                    System.out.print("¿Exitoso? (true/false): ");
+                    boolean ex = sc.nextBoolean();
                     sc.nextLine();
 
                     System.out.print("Directorio: ");
                     String dir = sc.nextLine();
 
-                    historial.agregarComando(texto, exitoso, dir);
+                    historial.agregarComando(texto, ex, dir);
                     break;
 
                 case 2:
@@ -73,13 +74,21 @@ public class Main {
 
                 case 7:
                     historial = new Historial();
+
                     historial.agregarComando("ls", true, "/home");
                     historial.agregarComando("cd documentos", true, "/home");
-                    historial.agregarComando("rm archivo.txt", false, "/home/docs");
+                    historial.agregarComando("rm clave.txt", false, "/home/docs");
                     historial.agregarComando("mkdir pruebas", true, "/home");
-                    historial.agregarComando("nano clave.txt", true, "/home");
+                    historial.agregarComando("nano config", true, "/home");
 
-                    System.out.println("Ejemplo cargado.");
+                    historial.arriba();
+                    historial.arriba();
+                    historial.arriba();
+
+                    historial.eliminarActual();
+
+                    historial.abajo();
+
                     historial.mostrarHistorial();
                     break;
 

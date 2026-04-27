@@ -15,5 +15,6 @@ public class Comando {
         this.siguiente = null;
         this.anterior = null;
 
+        
     }
 }
