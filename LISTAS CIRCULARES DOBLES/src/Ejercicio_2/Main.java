@@ -80,6 +80,7 @@ public class Main {
                     historial.agregarComando("rm clave.txt", false, "/home/docs");
                     historial.agregarComando("mkdir pruebas", true, "/home");
                     historial.agregarComando("nano config", true, "/home");
+                    
 
                     historial.arriba();
                     historial.arriba();
